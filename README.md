@@ -1,4 +1,4 @@
-# PaperMc Minecraft Server in Docker
+# PaperMC Minecraft Server in Docker
 Fast & Flexible Minecraft Server based in PaperMC.
 
 ## How to run
