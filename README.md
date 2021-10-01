@@ -18,6 +18,7 @@ To keep it simple there are only 3 environemtn Variabels you can adjust:
 | XMG| Specify the maximum RAM that is available for your server | 8G |
 ## docker-compose.yml
 
+```yaml
     version: '3.5'
     
     services:
@@ -47,6 +48,7 @@ To keep it simple there are only 3 environemtn Variabels you can adjust:
           #- ${PWD}/data/world:/minecraft/world
           #- ${PWD}/data/world_nether:/minecraft/world_nether
           #- ${PWD}/data/world_the_end:/minecraf/world_the_end
+```
 
 ## Links
 - [GitHub](https://github.com/leonfilser/papermc "GitHub")
