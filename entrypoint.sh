@@ -28,17 +28,10 @@ then
   rm -f *.jar
   # Download new server jar
   wget ${URL} -O ${JAR_NAME}
-  
-  # If this is the first run, accept the EULA
-  if [ ! -e eula.txt ]
-  then
-    # Run the server once to generate eula.txt
-    java -jar ${JAR_NAME}
-    # Edit eula.txt to accept the EULA
-    sed -i 's/false/true/g' eula.txt
-  fi
 fi
 
-echo "Starting MC Server"
+echo "Accepting Eula"
+echo "eula=true" >> eula.txt
+echo "Starting Minecraft Server"
 
 java -Xms${XMS} -Xmx${XMG} -jar ${JAR_NAME} nogui
