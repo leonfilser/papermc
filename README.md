@@ -37,11 +37,11 @@ To keep it simple there are only 3 environemtn Variabels you can adjust:
           - /etc/timezone:/etc/timezone:ro
     
           #uncomment what you need
-          #- ${PWD}/server.properties:/server.properties
-          #- ${PWD}/ops.json:/ops.json
-          #- ${PWD}/plugins:/plugins
-          #- ${PWD}/whitelist.json:/whitelist.json
-          #- ${PWD}/server-icon.png:/server-icon.png
+          #- ${PWD}/server.properties:/minecraft/server.properties
+          #- ${PWD}/ops.json:/minecraft/ops.json
+          #- ${PWD}/plugins:/minecraft/plugins
+          #- ${PWD}/whitelist.json:/minecraft/whitelist.json
+          #- ${PWD}/server-icon.png:/minecraft/server-icon.png
     
           #uncomment to persist your world
           #- ${PWD}/data/world:/minecraft/world
