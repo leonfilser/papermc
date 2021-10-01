@@ -1,0 +1,29 @@
+version: '3.5'
+
+services:
+  papermc_minecraft:
+    image: leonfilser/papermc:latest
+    restart: unless-stopped
+    container_name: papermc_minecraft
+    environment:
+        #specify which Minecraft version you want to use 
+      - VERSION=1.17.1
+        #the minimum RAM for your server
+      - XMS=4G
+        #the maximum RAM for your server
+      - XMG=8G
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - /etc/timezone:/etc/timezone:ro
+
+      #uncomment what you need
+      #- ${PWD}/server.properties:/server.properties
+      #- ${PWD}/ops.json:/ops.json
+      #- ${PWD}/plugins:/plugins
+      #- ${PWD}/whitelist.json:/whitelist.json
+      #- ${PWD}/server-icon.png:/server-icon.png
+
+      #uncomment to persist your world
+      #- ${PWD}/data/world:/minecraft/world
+      #- ${PWD}/data/world_nether:/minecraft/world_nether
+      #- ${PWD}/data/world_the_end:/minecraf/world_the_end
