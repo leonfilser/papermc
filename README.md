@@ -5,7 +5,7 @@ Fast & Flexible Minecraft Server based in PaperMC.
 
 If you only want to run this image for testing purpose run this:
 
-     docker run -p 25565:25565 leonfilser/papermc
+     docker run -p 25565:25565 leonfilser/papermc:latest
 
 If you want to use this image in production i highly recomend you to use th docker-compose file below.
 
