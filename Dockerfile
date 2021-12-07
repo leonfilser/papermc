@@ -1,4 +1,4 @@
-FROM openjdk:18-slim
+FROM openjdk:17-slim
 
 MAINTAINER Leon Filser <leon.filser@gmail.com>
 
