@@ -15,15 +15,5 @@ services:
     volumes:
       - /etc/localtime:/etc/localtime:ro
       - /etc/timezone:/etc/timezone:ro
-
-      #uncomment what you need
-      #- ${PWD}/server.properties:/minecraft/server.properties
-      #- ${PWD}/ops.json:/minecraft/ops.json
-      #- ${PWD}/plugins:/minecraft/plugins
-      #- ${PWD}/whitelist.json:/minecraft/whitelist.json
-      #- ${PWD}/server-icon.png:/minecraft/server-icon.png
-
-      #uncomment to persist your world
-      #- ${PWD}/data/world:/minecraft/world
-      #- ${PWD}/data/world_nether:/minecraft/world_nether
-      #- ${PWD}/data/world_the_end:/minecraf/world_the_end
+      #Uncomment to adjust settings and persist your world data
+      #- ${PWD}/data/:/minecraft
