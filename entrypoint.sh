@@ -5,6 +5,8 @@
 # Get version information and build download URL and jar name
 URL=https://papermc.io/api/v2/projects/paper
 
+cd ${DIR}
+
 if [ ${VERSION} = latest ]
 then
   # Get the latest MC version

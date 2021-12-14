@@ -11,7 +11,7 @@ ENV XMX=8G
 RUN mkdir ${DIR}
 WORKDIR ${DIR}
 
-COPY ./entrypoint.sh ${DIR}
+COPY ./entrypoint.sh /
 
 RUN apt-get update && apt-get install wget jq -y \
     && rm -rf /var/lib/apt/lists
