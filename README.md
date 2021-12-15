@@ -26,10 +26,10 @@ To keep it simple there are only 3 environemtn Variabels you can adjust:
 version: '3.5'
 
 services:
-  papermc_minecraft:
+  papermc-minecraft:
     image: leonfilser/papermc:latest
     restart: unless-stopped
-    container_name: papermc_minecraft
+    container_name: papermc-minecraft
     environment:
         #specify which Minecraft version you want to use 
       - VERSION=1.17.1
@@ -41,17 +41,8 @@ services:
       - /etc/localtime:/etc/localtime:ro
       - /etc/timezone:/etc/timezone:ro
 
-      #uncomment what you need
-      #- ${PWD}/server.properties:/minecraft/server.properties
-      #- ${PWD}/ops.json:/minecraft/ops.json
-      #- ${PWD}/plugins:/minecraft/plugins
-      #- ${PWD}/whitelist.json:/minecraft/whitelist.json
-      #- ${PWD}/server-icon.png:/minecraft/server-icon.png
-
-      #uncomment to persist your world
-      #- ${PWD}/data/world:/minecraft/world
-      #- ${PWD}/data/world_nether:/minecraft/world_nether
-      #- ${PWD}/data/world_the_end:/minecraf/world_the_end
+      #Uncomment to adjust settings and persist your world data
+      #- ${PWD}/data/:/minecraft
 ```
 
 ## Links
