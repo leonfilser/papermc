@@ -1,6 +1,7 @@
 FROM openjdk:17-slim
-
 MAINTAINER Leon Filser <leon.filser@gmail.com>
+
+USER minecraft
 
 ENV DIR=/minecraft
 
