@@ -16,7 +16,7 @@ COPY ./entrypoint.sh /
 RUN apt-get update && apt-get install wget jq -y \
     && rm -rf /var/lib/apt/lists
 
-ENTRYPOINT ["sh", "entrypoint.sh"]
+ENTRYPOINT ["sh", "/entrypoint.sh"]
 
 EXPOSE 25565/tcp
 EXPOSE 25565/udp
