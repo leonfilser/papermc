@@ -1,7 +1,7 @@
 The MIT License (MIT)
 =====================
 
-Copyright © `<2022>` `<Leon Filser>`
+Copyright © `2022` `Leon Filser`
 
 Permission is hereby granted, free of charge, to any person
 obtaining a copy of this software and associated documentation
