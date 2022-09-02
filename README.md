@@ -1,18 +1,15 @@
 # PaperMC Minecraft Server in Docker
-Fast & Flexible Minecraft Server based in PaperMC.
+Fast & Flexible Minecraft Server based on PaperMC.
 
-## How to run
-
-If you only want to run this image for testing purpose run this:
+## Quickstart
+If you simply want to run an Minecraft Server without any worries execute this:
 
 ```bash
-docker run -p 25565:25565 leonfilser/papermc:latest
-
+docker run -p 25565:25565 -v ${PWD}/data/:/minecraft leonfilser/papermc:latest
 ```
-If you want to use this image in production i highly recomend you to use th docker-compose file below.
 
 ## Environment Variables
-To keep it simple there are only 3 environemtn Variabels you can adjust:
+To keep it simple there are only 3 environment variabels you need to adjust:
 
 | Variable | Description                                                         | Default          |
 |----------|---------------------------------------------------------------------|------------------|
@@ -40,11 +37,7 @@ services:
         #the maximum RAM for your server
       - XMG=8G
     volumes:
-      - /etc/localtime:/etc/localtime:ro
-      - /etc/timezone:/etc/timezone:ro
-
-      #Uncomment to adjust settings and persist your world data
-      #- ${PWD}/data/:/minecraft
+      - ${PWD}/data/:/minecraft
 ```
 
 ## Links
