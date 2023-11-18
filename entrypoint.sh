@@ -33,7 +33,7 @@ then
 fi
 
 echo "Accepting Eula"
-echo "eula=true" >> eula.txt
+echo "eula=true" > eula.txt
 echo "Starting Minecraft Server"
 
 java -Xms${XMS} -Xmx${XMG} -jar ${JAR_NAME} nogui
